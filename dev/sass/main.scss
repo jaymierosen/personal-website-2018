@@ -1,0 +1,51 @@
+@import 'partials/normalize';
+@import 'partials/vars';
+// * {
+// 	border: 1px solid black;
+// }
+body {
+	background-color: $grey;
+	padding: 5rem 10rem;
+	font-family: $primary-font;
+		.grid-container {
+			display: table;
+			width: 100%;
+			height: auto;
+		}
+		section.col-l, section.col-r {
+			display: table-cell;
+			text-align: left;
+			width: 50%;
+			padding: 0;
+			
+		}
+		hr {
+			margin: 2rem 0;
+			border: 0;
+    		height: 1px;
+    		background: #0000CD;
+		}
+		h1, h2 {
+			margin: 0;
+			font-weight: 400;
+			color: $charcoal;
+		}
+		ul {
+			list-style: none;
+			padding-left: 0;
+			margin: 0;
+		}
+		a, p, li {
+			line-height: 1.6rem;
+		}
+		a, p {
+			color: $charcoal;
+		}
+		a {
+			text-decoration: none;
+			border-bottom: 1px dotted gray;
+			&:hover {
+				color: #0000CD;
+			}
+		}
+}
