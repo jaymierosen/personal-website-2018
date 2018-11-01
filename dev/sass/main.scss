@@ -5,6 +5,7 @@
 // }
 body {
 	background-color: $grey;
+	// background-color: $charcoal;
 	padding: 5rem 10rem;
 	font-family: $primary-font;
 		.grid-container {
@@ -12,23 +13,35 @@ body {
 			width: 100%;
 			height: auto;
 		}
-		section.col-l, section.col-r {
+		nav {
+			margin: 2.2rem 0 4.4rem 0;
+		}
+		.col-l, .col-r {
 			display: table-cell;
 			text-align: left;
 			width: 50%;
 			padding: 0;
-			
+		}
+		ul.col-l, ul.col-r {
+			&:nth-child(1) {
+				font-weight: 700;
+			}
 		}
 		hr {
-			margin: 2rem 0;
+			margin: 2.2rem 0;
 			border: 0;
-    		height: 1px;
-    		background: #0000CD;
+			height: 1px;
+			// background: $grey;
+			background: $charcoal;
 		}
-		h1, h2 {
+		h1, h2, h3 {
 			margin: 0;
 			font-weight: 400;
+			// color: $grey;
 			color: $charcoal;
+			font-size: 16px;
+			line-height: 1.8rem;
+			font-weight: 700;
 		}
 		ul {
 			list-style: none;
@@ -36,16 +49,27 @@ body {
 			margin: 0;
 		}
 		a, p, li {
-			line-height: 1.6rem;
-		}
-		a, p {
+			line-height: 1.8rem;
+			// color: $grey;
 			color: $charcoal;
+			font-weight: 400;
+		}
+		button {
+			border: 1px solid $charcoal;
+			background: transparent;
+			padding: 1rem;
+		}
+		footer p, footer li, footer a {
+			font-size: 14px;
+		}
+		footer {
+			margin: 0 0 4.4rem 0;
 		}
 		a {
 			text-decoration: none;
 			border-bottom: 1px dotted gray;
-			&:hover {
-				color: #0000CD;
-			}
+			// &:hover {
+			// 	color: #FF1493;
+			// }
 		}
 }
