@@ -298,7 +298,7 @@ template {
   display: none; }
 
 body {
-  background-color: #E9E3E6;
+  background-color: #FDFFFC;
   padding: 5rem 10rem;
   font-family: "Muli", sans-serif; }
   body .grid-container {
@@ -312,25 +312,29 @@ body {
     text-align: left;
     width: 50%;
     padding: 0; }
-  body ul.col-l:nth-child(1), body ul.col-r:nth-child(1) {
-    font-weight: 700; }
+  body ul.col-l ul, body ul.col-r ul {
+    margin: 1em 0; }
   body hr {
     margin: 2.2rem 0;
     border: 0;
     height: 1px;
-    background: #736F72; }
+    background: #342E37; }
   body h1, body h2, body h3 {
     margin: 0;
-    font-weight: 400;
-    color: #736F72;
+    color: #342E37;
     font-size: 16px;
     line-height: 1.8rem;
     font-weight: 700; }
   body .skills-category {
-    font-weight: 700; }
+    font-weight: 700;
+    margin: 1em 0; }
   body .download {
     border-bottom: none;
-    padding: 1rem; }
+    text-decoration: none;
+    border: 1px solid #342E37;
+    background: transparent;
+    padding: 1rem;
+    color: #342E37; }
   body .nowrap {
     white-space: nowrap; }
   body ul {
@@ -339,22 +343,19 @@ body {
     margin: 0; }
   body a, body p, body li {
     line-height: 1.8rem;
-    color: #736F72;
+    color: #342E37;
     font-weight: 400; }
-  body button {
-    border: 1px solid #736F72;
-    background: transparent;
-    padding: 1rem;
-    color: #736F72; }
-  body footer p, body footer li, body footer a {
-    font-size: 14px; }
   body footer {
     margin: 0 0 4.4rem 0; }
-  body a {
+    body footer p, body footer li, body footer a {
+      font-size: 14px; }
+  body a:not(.download) {
     text-decoration: none;
-    border-bottom: 1px dotted gray; }
-    body a:hover {
-      color: #9A8F97; }
+    border-bottom: 1px dotted gray;
+    transition: 0.3s all ease-in-out; }
+    body a:not(.download):hover {
+      color: #FDFFFC;
+      background: #342E37; }
 
 @media screen and (max-width: 1090px) {
   body .col-l, body .col-r {

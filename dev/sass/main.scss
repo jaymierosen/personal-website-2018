@@ -20,8 +20,8 @@ body {
 			padding: 0;
 		}
 		ul.col-l, ul.col-r {
-			&:nth-child(1) {
-				font-weight: 700;
+			ul {
+				margin: 1em 0;
 			}
 		}
 		hr {
@@ -32,7 +32,6 @@ body {
 		}
 		h1, h2, h3 {
 			margin: 0;
-			font-weight: 400;
 			color: $charcoal;
 			font-size: 16px;
 			line-height: 1.8rem;
@@ -40,10 +39,15 @@ body {
 		}
 		.skills-category {
 			font-weight: 700;
+			margin: 1em 0;
 		}
 		.download {
 			border-bottom: none;
+			text-decoration: none;
+			border: 1px solid $charcoal;
+			background: transparent;
 			padding: 1rem;
+			color: $charcoal;
 		}
 		.nowrap {
 			white-space: nowrap;
@@ -59,23 +63,21 @@ body {
 			color: $charcoal;
 			font-weight: 400;
 		}
-		button {
-			border: 1px solid $charcoal;
-			background: transparent;
-			padding: 1rem;
-			color: $charcoal;
-		}
-		footer p, footer li, footer a {
-			font-size: 14px;
-		}
 		footer {
 			margin: 0 0 4.4rem 0;
+			p, li, a {
+				font-size: 14px;
+			}
 		}
-		a {
+		a:not(.download) {
 			text-decoration: none;
 			border-bottom: 1px dotted gray;
+			transition: 0.3s all ease-in-out;
+			// padding: 2px 4px;
+			// background: rgba(255, 51, 102, 0.6);
 			&:hover {
-				color: #9A8F97;
+				color: $grey;
+				background: $charcoal;
 			}
 		}
 }
